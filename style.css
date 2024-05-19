@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: wheat;
+    transition: .5s;
+    font-weight: bold;
+}
+
+li a:hover {
+    display: inline-block;
+    color: rgb(7, 83, 7);
+    text-shadow: 1px 1px 1px wheat;
+    transform: scale(1.3);
+}
+
+.navbar {
+    background-color: rgba(63, 59, 51, 0.164);
+    display: flex;
+    height: 80px;
+    padding-top: 30px;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.navbar-logo {
+    font-size: 30px;
+    transition: .3s;
+    color: rgb(7, 83, 7);
+}
+
+.navbar-logo:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px 1px wheat;
+}
+
+.navbar-nav {
+    position: absolute;
+    right: 20px;
+}
+
+ul,
+li {
+    list-style: none;
+    margin-left: 3px;
+    padding-left: 10px;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.first-section {
+    background-image: url("/images/unnamed (1).jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 90vh;
+
+}
+
+.content {
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.main-header {
+    font-size: 40px;
+    margin-top: -30px;
+    margin-bottom: 90px;
+    color: rgb(7, 83, 7);
+}
+
+.white {
+    color: white;
+}
+
+button {
+    background-color: rgba(83, 79, 71, 0.381);
+    padding: 25px;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: .5s;
+    border: none;
+    margin-top: 30px;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    color: rgb(7, 83, 7);
+    text-shadow: .5px .5px 3px;
+    box-shadow: 1px 3px 2px white;
+}
+
+.second-section,
+.third-section,
+.forth-section,
+.fifth-section,
+.sixth-section,
+.seventh-section {
+    margin: 30px 20px 0px 20px;
+
+}
+
+.our-story,
+.why-us,
+.gift-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 2px solid rgb(176, 175, 175);
+    box-shadow: 5px 5px 7px rgb(164, 108, 4);
+}
+
+@media (min-width: 992px) {
+    .navbar-logo {
+        font-size: 40px;
+        color: rgb(39, 215, 12);
+    }
+
+    a {
+        font-size: 25px;
+        color: aliceblue;
+    }
+
+    .menu-btn {
+        margin-top: 120px;
+        padding: 20px 50px;
+    }
+
+    .menu-btn:hover {
+        color: rgb(39, 215, 12);
+    }
+
+    .first-section {
+        background-image: url("/images/cup-coffee-table-front-street-with-city-lights-background_188544-10293.avif");
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .main-header {
+        font-size: 60px;
+        margin-top: -30px;
+        margin-bottom: 50px;
+        color: rgb(38, 224, 38);
+    }
+
+    .second-section,
+    .third-section,
+    .forth-section,
+    .fifth-section,
+    .sixth-section,
+    .seventh-section {
+        margin: 30px 40px 0px 40px;
+    }
+
+    .our-story,
+    .why-us,
+    .gift-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.img-paragraph {
+    height: 100%;
+    width: 100%;
+}
+
+.paragraph {
+    padding: 20px;
+    font-size: 16px;
+    text-align: justify;
+    font-family: monospace;
+    background-color: rgb(7, 83, 7);
+    color: wheat;
+    line-height: 30px;
+}
+
+.btns {
+    background-color: rgb(7, 83, 7);
+}
+
+.btns h2 {
+    margin-top: 8px;
+}
+
+.gift-btn {
+    display: block;
+    padding: 10px 25px;
+    margin: 25px 20px;
+    background-color: wheat;
+}
+
+.btns h4 {
+    margin-left: 20px;
+    color: wheat;
+}
+
+.next-to-gift {
+    background-color: wheat;
+    height: 50vh;
+}
+
+.next-to-gift h1 {
+    text-align: center;
+    margin-top: 6px;
+    font-family: cursive;
+}
+
+.logo-gift {
+    width: 30%;
+    height: 40%;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+.fa-gift {
+    font-size: 100px;
+    margin-left: 10px;
+}
+
+.num-gift {
+    font-size: 90px;
+    display: inline;
+    margin-left: 30px;
+}
+
+@media (min-width: 992px) {
+    .next-to-gift {
+        height: 100%;
+        position: relative;
+    }
+
+    .logo-gift {
+        width: 40%;
+        height: 45%;
+        display: block;
+        margin-left: 190px;
+        margin-bottom: 8px;
+    }
+
+    .fa-gift {
+        font-size: 150px;
+    }
+
+    .num-gift {
+        font-size: 100px;
+        display: inline;
+        margin-left: 140px;
+    }
+}
+
+.menu-pic {
+    height: 100%;
+    width: 100%;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: wheat;
+    margin-top: -4px;
+}
+
+.coffee,
+.non-coffee,
+.pastries {
+    text-align: center;
+    padding: 20px;
+}
+
+.list-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(7, 83, 7);
+    color: wheat;
+    font-size: 20px;
+}
+
+.order-btn {
+    border-radius: 0;
+}
+
+@media (min-width: 992px) {
+    .menu {
+        grid-template-columns: 1fr 1fr 1fr;
+        position: relative;
+        height: 60vh;
+    }
+    .order-btn {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+    }
+}
+
+.sixth-section {
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 40px;
+}
+
+.gallery-fotos {
+    height: 450px;
+    width: 90%;
+    margin-top: 15px;
+    box-shadow: 3px 3px 7px rgb(7, 83, 7);
+    border-radius: 5px;
+}
+
+.see-more-btn {
+    position: absolute;
+    padding: 20px;
+    bottom: 0px;
+    left: 90px;
+    right: 90px;
+
+}
+
+@media (min-width: 992px) {
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gallery-fotos{
+        height: 600px;
+    }
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: wheat;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+    .contact-info {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.contact h1 {
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.message {
+    background-color: rgb(6, 77, 6);
+    position: relative;
+    height: 600px;
+}
+
+.message h1 {
+    padding-top: 15px;
+}
+
+form {
+    margin-left: 80px;
+}
+
+input,
+textarea {
+    display: block;
+    width: 85%;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+label {
+    color: wheat;
+
+}
+
+textarea {
+    height: 100px;
+}
+
+.contact-loc p,
+.contact-time p,
+.footer-contact p,
+.footer-time p,
+.footer-team p,
+.footer-order p {
+    margin: 30px;
+}
+
+.send-btn {
+    padding: 20px 40px;
+    position: absolute;
+    background-color: white;
+    color: green;
+}
+
+.eighth-section {
+    background-color: rgb(118, 78, 4);
+    border-top: 3px solid rgb(27, 19, 1);
+    margin-top: 180px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px 30px;
+}
+
+@media (min-width: 992px) {
+.footer{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
+
+.footer-contact h3,
+.footer-time h3,
+.footer-team h3,
+.footer-order h3 {
+    margin-left: 30px;
+}
+
+
+.copy-right {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-top: 1px solid;
+}
